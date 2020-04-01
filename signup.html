@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KERALA || SIGH-UP</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <link rel="icon" href="images/logo.jpg">
+
+</head>
+<body>
+    <body background="images/1635301.jpg">
+    <!-- for nav tab -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark navbar-dark">
+
+
+        <a class="navbar-brand" href="#">
+            <img src="images/nav.jpg" width="30" height="30" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="district.html">Districts</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link active" href="signup.html">Sign-Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html" tabindex="-1" aria-disabled="true">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <br><br>
+
+      <section class="login-block">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-4 login-sec">
+         <h3 style="font-family: 'Times New Roman', Times, serif; color: white;">NEW MEMBER</h3>
+    <br>
+  <form name="myForm" action="login.html" onsubmit="return validateForm()">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4" style="color: white;">Email</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4" style="color: white;">Password</label>
+        <input type="password" class="form-control" id="password">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="input" style="color: white;">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter full name">
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2" style="color: white;">Address </label>
+      <input type="text" class="form-control" id="address" placeholder="Apartment, Dist., Zip">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputnumber" style="color: white;">MOBILE</label>
+        <input type="text" class="form-control" id="mobile">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputState">State</label>
+        <select id="state" class="form-control">
+          <option selected>Choose...</option>
+          <option>Kerala</option>
+          <option>Tamilnadu</option>
+          <option>Chhattisgarh</option>
+          <option>Assam</option>
+          <option>Andhra Pradesh</option>
+          <option>Arunachal Pradesh</option>
+        </select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputzip">zip</label>
+        <input type="text" class="form-control" id="zip">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Check me out
+        </label>
+      </div>
+    </div>
+    <button type="submit" onclick="greeter();" class="btn btn-primary">Sign in</button>
+  </form>
+
+            </div>
+            <div class="col-md-8 banner-sec">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <img class="d-block img-fluid" src="images/sign1.JPG" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="banner-text">
+              <h2>ILLIKKAL KALLU</h2>
+          </div>
+      </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="images/sign2.JPG" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="banner-text">
+                <h2>RAAMAKALMEDU</h2>
+            </div>	
+        </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid" src="images/sign3.jpg" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <div class="banner-text">
+                <h2>BHOOTHATHANKETTU</h2>
+            </div>	
+        </div>
+      </div>
+                </div>	   
+                
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+
+
+<!-- <br><br>
+<h1 style="text-align: center; color: brown;">EXPLORE THE BACKWATERS OF KERALA</h1><br>
+<h2 style="color: rgb(235, 235, 94); text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" >AWAKEN T0 A DIFFERENT WORLD</h2>
+<br><br>
+<p style="color: aliceblue;" >Welcome abode. Sun 'N' Mist Kerala brings on a fresh dawn of comfort and luxury in houseboat cruises through the picture-postcard backwaters of the God’s own country. We have a variety of houseboat fleet, comprising 1-bedroom, 2-bedroom, 3-bedroom and 4-bedroom deluxe and luxury houseboats that help you savour the natural charm of Alleppey (Alappuzha), Kumarakom and Quilon (Kollam). Kerala houseboats have the right package, irrespective of whatever be your requirements (honeymoon, family trip, re-union with friends ...) or whoever you want to take with you (family, friends, ... or an entire organization)
+
+    We have several special packages, ranging from Kerala houseboat packages for sightseeing to special honeymoon houseboat packages. Our starting point in Alleppey is Finishing point or Pallathuruthy and the boarding point in Kumarakom is Cheepungal, near Taj Hotel, Kumarakom. Come. Plunge into an awesome world. There is no better way than feeling the bosom of Kerala’s luscious nature than a peaceful and unobtrusive journey in our luxury houseboats.
+</p> -->
+<br>
+<br><br>
+<br>
+<footer style="background-color: black; color: blanchedalmond;"  >Privacy Policy || Terms and Conditions
+  <div style="text-align: right;">
+    Copyright 2020. keralatourism.com. All Rights Reserved
+  </div>
+  
+</footer>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>
