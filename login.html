@@ -49,15 +49,15 @@
 		<div class="col-md-4 login-sec">
         <h2 class="text-center">Login Now</h2>
         <br>
-		    <form class="login-form">
+		    <form id="log" action="home.html" onsubmit="return validate()">
   <div class="form-group">
-    <label for="exampleInputEmail1" class="text-uppercase">Username</label>
-    <input type="text" class="form-control" placeholder="">
+    <label for="InputEmail"  >USERNAME</label>
+    <input type="text" id="inputEmail" class="form-control" placeholder="username/email">
     
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1" class="text-uppercase">Password</label>
-    <input type="password" class="form-control" placeholder="">
+    <label for="InputPassword" >PASSWORD</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="password">
   </div>
   
   
@@ -113,12 +113,75 @@
 
 
 <br><br><br>
-<footer style="background-color: black; color: blanchedalmond;"  >Privacy Policy || Terms and Conditions
+<!-- <footer style="background-color: black; color: blanchedalmond;"  >Privacy Policy || Terms and Conditions
   <div style="text-align: right;">
     Copyright 2020. keralatourism.com. All Rights Reserved
   </div>
+</footer> -->
+<footer class="footer-div">
+  <br>
+  <div class="container">
+
   
+    <div class="row">
+        <div class="col-md-3 col-sm-4 col-xs-6 footer-column">
+        <h4>About us</h4>
+        <div class="footer-menu">
+          <p>In addition to organising tours, we also help our valued customers in tailoring their favourite tours according to their requirement and convenience. 
+            </p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6 footer-column">
+        <h4>Quick links</h4>
+        <ul class="footer-menu">
+          <li><a href="signup.html">Sign up</a></li>
+          <li><a href="login.html">Login</a></li>
+         
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6 footer-column">
+        <h4>Contact us</h4>
+
+        <div class="footer-menu">
+        <p>
+           p746, Pathanamthitta, Kerala</p>
+
+          <p>
+           </i> tittosamthomas@gmail.com</p>
+
+          <p>
+           </i> +91 9744728862</p>
+          </div>
+      </div>
+      <div class="col-md-3 col-sm-4 col-xs-6 footer-column ">
+        <h4>Follow us</h4>
+
+   
+        <ul class="follow">
+   <li><a  href="http://www.facebook.com" target="_blank">
+      <img src="images/fb.jpg" width="40" height="40">
+    </a></li> 
+   
+    <li>  <a  href="http://www.twitter.com" target="_blank">
+      <img src="images/twi.png" width="40" height="40">
+    </a></li> 
+  
+   
+    <li>   <a  href="http://www.instagram.com" target="_blank">
+      <img src="images/insta.jpg" width="40" height="40">
+    </a></li> 
+  </ul>
+
+      </div>
+      
+    </div>
+  </div>
+<div class="footer-copyright text-center py-1">
+<p> Copyright 2020. keralatourism.com. All Rights Reserved</p>
+</div>
 </footer>
+
+<script src="login.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
